@@ -677,6 +677,8 @@ img{
 /* catalog */
 
 .catalog {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   font-weight: 500;
   font-size: 16px;
   line-height: 22px;
@@ -684,6 +686,10 @@ img{
 
 .catalog-item a{
   color: var(--basic-white);
+}
+
+.catalog-item img {
+  border-radius: 50%;
 }
 
 /* pagination */

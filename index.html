@@ -17,7 +17,7 @@
       <a class="main-header-logo"><img src="img/logo.svg" width="154" height="64" alt="Логотип Глейси"></a>
       <nav class="main-nav">
         <ul class="site-navigation">
-          <li>
+          <li class="site-navigation-list">
             <a href="#">Каталог</a>
             <ul class="sub-menu">
               <li><span>Новинки</span></li>
@@ -27,18 +27,18 @@
               <li><a href="#">Мелорин</a></li>
             </ul>
           </li>
-          <li><a href="#">Доставка и оплата</a></li>
-          <li><a href="#">О компании</a></li>
+          <li class="site-navigation-list"><a href="#">Доставка и оплата</a></li>
+          <li class="site-navigation-list"><a href="#">О компании</a></li>
         </ul>
         <div class="user-navigation">
-          <div>
+          <div class="user-navigation-list">
             <a class="btn-search" href="#">Поиск</a>
             <div class="search">
               <input id="search" type="text" name="search" placeholder="Крем-брюле">
               <label for="search">Что ищем?</label>
             </div>
           </div>
-          <div>
+          <div class="user-navigation-list">
             <a class="btn-enter" href="#">Вход</a>
             <div class="enter">
               <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
@@ -56,7 +56,9 @@
               </form>
             </div>
           </div>
-          <a class="btn-basket" href="#">Корзина</a>
+          <div class="user-navigation-list">
+            <a class="btn-basket" href="#">Корзина</a>
+          </div>
         </div>
       </nav>
       <div class="working-hours">
@@ -135,10 +137,10 @@
             Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.
           </li>
           <li class="features-list-item">
-            Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.
-          </li>
-          <li class="features-list-item">
             Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.
+          </li>
+           <li class="features-list-item">
+            Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.
           </li>
           <li class="features-list-item">
             Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.
@@ -151,7 +153,7 @@
 
         <article class="blog-article">
           <a href="#">Новое в нашем блоге</a>
-          <h3><a href="#">10 способов сервировки фруктовых щербетов к столу</a></h3>
+          <h3><a href="#">10 способов сервировки фруктовых щербетов<br> к столу</a></h3>
         </article>
 
         <div class="form-wrapper">
@@ -206,10 +208,10 @@
               <span><a href="#">Для поставщиков</a></span>
             </li>
             <li>
-              <a href="#">О производстве</a>
+              <a href="#">Наши документы</a>
             </li>
             <li>
-              <a href="#">Наши документы</a>
+              <a href="#">О производстве</a>
             </li>
             <li>
               <a href="#">Экологические стандарты</a>

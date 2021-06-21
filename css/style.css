@@ -52,10 +52,15 @@ img{
 
 .visually-hidden {
   position: absolute;
-  clip: rect(0 0 0 0);
   width: 1px;
   height: 1px;
   margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .btn {
@@ -249,6 +254,7 @@ img{
 }
 
 .products-in-backet {
+  display: none;
   font-size: 13px;
   line-height: 16px;
   background: #F8F7F4;
@@ -670,16 +676,27 @@ img{
 /* catalog main*/
 
 .catalog-title{
+  margin: 0;
+  margin-bottom: 29px;
+  padding: 0;
   font-weight: bold;
   font-size: 35px;
   line-height: 41px;
 }
 
 .catalog-breadcrumbs {
+  display: flex;
   list-style: none;
   font-weight: normal;
   font-size: 14px;
   line-height: 16px;
+  margin: 0;
+  margin-bottom: 9px;
+  padding: 0;
+}
+
+.catalog-breadcrumbs li {
+  margin-right: 8px;
 }
 
 .catalog-breadcrumbs a{
@@ -700,10 +717,21 @@ img{
 }
 
 .filter-form {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 26px;
   font-weight: 500;
   font-size: 16px;
   line-height: 18px;
   color: var(--basic-white);
+}
+
+.filter-form fieldset {
+  margin:0 ;
+  margin-right: 15px;
+  margin-bottom: 14px;
+  padding: 0;
+  border: none;
 }
 
 .filter-form legend {
@@ -760,6 +788,17 @@ img{
   font-weight: 500;
   font-size: 16px;
   line-height: 18px;
+  margin: 0;
+  margin-top: 80px;
+  margin-bottom: 48px;
+  padding: 0;
+  grid-column: -2/-1;
+  justify-self: end;
+  display: flex;
+}
+
+.pagination li {
+  margin-right: 20px;
 }
 
 .pagination a{

@@ -348,7 +348,9 @@ img{
 }
 
 .nav-search:hover .search,
-.nav-search:focus .search {
+.nav-search:focus .search,
+.search-wrapper:hover .search,
+.search-wrapper:focus .search  {
   display: block;
 }
 
@@ -401,7 +403,9 @@ img{
 }
 
 .nav-enter:hover .enter,
-.nav-enter:focus .enter {
+.nav-enter:focus .enter,
+.login-form:hover .enter,
+.login-form:active .enter {
   display: block;
 }
 

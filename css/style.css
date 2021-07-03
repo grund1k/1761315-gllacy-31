@@ -109,7 +109,7 @@ img{
 /* main-header */
 
 .main-header {
-  width: 1146px;
+  max-width: 1146px;
   margin: 0 auto;
   display: grid;
   justify-content: start;
@@ -128,7 +128,7 @@ img{
 /* Main navigation */
 
 .navigation-wrapper {
-  width: 1146px;
+  max-width: 1146px;
   display: grid;
   grid-template-columns: min-content 1fr;
   justify-content: start;
@@ -136,7 +136,7 @@ img{
 
 .main-nav {
   display: grid;
-  width: 968px;
+  min-width: 968px;
   grid-template-columns: 1fr auto;
   font-weight: bold;
   line-height: 18px;
@@ -335,12 +335,12 @@ img{
   background: var(--basic-grey);
   box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.4);
   border-radius: 4px;
-  width: 313px;
+  min-width: 313px;
 }
 
 .search input {
-  width: 311px;
-  height: 44px;
+  min-width: 311px;
+  min-height: 44px;
   padding: 15px;
   border: 1px solid #D3D3D2;
   box-sizing: border-box;
@@ -406,7 +406,7 @@ img{
 }
 
 .login-form {
-  width: 242px;
+  min-width: 242px;
   background: var(--basic-grey);
   box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.4);
   border-radius: 4px;
@@ -414,8 +414,8 @@ img{
 }
 
 .login-form-item input{
-  width: 241px;
-  height: 44px;
+  min-width: 241px;
+  min-height: 44px;
   border: 1px solid #D3D3D2;
   box-sizing: border-box;
   border-radius: 4px;
@@ -498,7 +498,7 @@ img{
 
 .basket-wrapper {
   padding: 20px 34px 21px 21px;
-  width: 485px;
+  min-width: 485px;
   background: var(--basic-grey);
   box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.4);
   border-radius: 4px;
@@ -549,7 +549,7 @@ img{
 }
 
 .divider {
-  width: 510px;
+  min-width: 510px;
   height: 1px;
   background-color: #CACAC7;
   margin-bottom: 15px;
@@ -631,7 +631,7 @@ img{
 }
 
 .slider-text {
-  width: 672px;
+  max-width: 672px;
   margin: 0 auto;
   font-weight: bold;
   font-size: 60px;
@@ -731,7 +731,7 @@ img{
 }
 
 .promotion-item {
-  width: 560px;
+  min-width: 560px;
   height: 229px;
   border-radius: 16px;
 }
@@ -907,7 +907,7 @@ img{
 
 .features-list-item {
   position: relative;
-  width: 484px;
+  max-width: 484px;
   padding-left: 55px;
   margin-bottom: 23px;
 }
@@ -971,7 +971,7 @@ img{
 }
 
 .blog-article {
-  width: 540px;
+  min-width: 540px;
   height: 197px;
   padding-top: 23px;
   padding-left: 20px;
@@ -1027,7 +1027,7 @@ img{
 }
 
 .subscription-form input {
-  width: 368px;
+  min-width: 368px;
   height: 44px;
   background: var(--basic-white);
   border: 1px solid rgba(178, 178, 178, 0.52);
@@ -1062,7 +1062,7 @@ img{
 }
 
 .contacts {
-  width: 254px;
+  min-width: 254px;
   height: 243px;
   position: absolute;
   top: 62px;
@@ -1105,6 +1105,7 @@ img{
   font-size: 18px;
   line-height: 24px;
   text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76);
+  cursor: pointer;
 }
 
 /* footer */
@@ -1224,7 +1225,7 @@ margin: auto;
   position: fixed;
   top: 338px;
   bottom: auto;
-  width: 428px;
+  max-width: 428px;
   padding: 14px 25px 27px 27px;
   background-color: var(--basic-grey);
   border-radius: 6px;
@@ -1254,7 +1255,7 @@ margin: auto;
 }
 
 .feedback-form {
-  width: 239px;
+  max-width: 239px;
   padding: 12px 13px;
   background: #FFFFFF;
   border: 1px solid rgba(178, 178, 178, 0.52);
@@ -1263,7 +1264,7 @@ margin: auto;
 }
 
 .feedbak-textarea {
-  width: 402px;
+  min-width: 402px;
   height: 128px;
 }
 
@@ -1285,6 +1286,15 @@ margin: auto;
   font-weight: bold;
   font-size: 35px;
   line-height: 41px;
+}
+
+.catalog .price {
+  top: 208px;
+}
+
+.catalog .product-title {
+  margin-top: 6px;
+  margin-left: -2px;
 }
 
 .catalog-breadcrumbs {
@@ -1351,7 +1361,7 @@ margin: auto;
 }
 
 .filter-form fieldset {
-  margin:0 ;
+  margin: 0;
   margin-right: 15px;
   margin-bottom: 14px;
   padding: 0;
@@ -1397,7 +1407,7 @@ margin: auto;
 }
 
 .range-filter {
-  width: 218px;
+  min-width: 218px;
 }
 
 .range-controls {
@@ -1580,7 +1590,7 @@ margin: auto;
   line-height: 22px;
   column-gap: 26px;
   row-gap: 19px;
-  margin-bottom: 57px;
+  margin-bottom: 63px;
 }
 
 .catalog-item a{
@@ -1603,7 +1613,7 @@ margin: auto;
   padding: 0;
   margin: 0;
   margin-right: -10px;
-  margin-bottom: 29px;
+  margin-bottom: 51px;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;

@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet" type="text/css">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
@@ -33,7 +33,7 @@
             </ul>
             <div class="user-navigation">
               <div class="user-navigation-list nav-search">
-                <span class="btn-search" href="#"><span class="visually-hidden">Поиск</span></span>
+                <span class="btn-search" href="#" tabindex="0"><span class="visually-hidden">Поиск</span></span>
                 <div class="search">
                   <form class="search-wrapper">
                     <input id="search" type="text" name="search" placeholder="Крем-брюле">
@@ -83,7 +83,7 @@
             <h2 class="visually-hidden">Выбери свое мороженное</h2>
 
             <ul class="slider-list">
-              <li class="slider-item slide slide-current">
+              <li class="slider-item-1 slide slide-current">
                 <h3 class="slider-text">
                   Крем-брюле и пломбир с малиновым джемом
                 </h3>
@@ -91,7 +91,7 @@
                   Давайте оба!
                 </a>
               </li>
-              <li class="slider-item slide">
+              <li class="slider-item-2 slide">
                 <h3 class="slider-text">
                   Шоколадный пломбир и лимонный сорбет
                 </h3>
@@ -99,7 +99,7 @@
                   Давайте оба!
                 </a>
               </li>
-              <li class="slider-item slide">
+              <li class="slider-item-3 slide">
                 <h3 class="slider-text">
                   Пломбир с помадкой<br> и клубничный щербет
                 </h3>
@@ -110,9 +110,9 @@
             </ul>
 
             <div class="slider-controls">
-              <button class="current" type="button" aria-label="Первый слайд"></button>
-              <button type="button" aria-label="Второй слайд"></button>
-              <button type="button" aria-label="Третий слайд"></button>
+              <button class="btn-1 current" type="button" aria-label="Первый слайд"></button>
+              <button class="btn-2" type="button" aria-label="Второй слайд"></button>
+              <button class="btn-3" type="button" aria-label="Третий слайд"></button>
             </div>
           </section>
 
@@ -303,20 +303,22 @@
         <a class="popup-close" href="#"><span class="visually-hidden">Закрыть</span></a>
         <form class="popup-feeadback-form" action="https://echo.htmlacademy.ru" method="post">
           <div>
-            <input class="feedback-form" id="user-name" type="text" name="user-name" placeholder="Имя Фамилия" required>
+            <input class="feedback-form user-name" id="user-name" type="text" name="user-name" placeholder="Имя Фамилия" >
             <label class="visually-hidden" for="user-name">Ваше Имя и Фамилия</label>
           </div>
           <div>
-            <input class="feedback-form" id="user-email" type="text" name="user-email" placeholder="email@example.com" required>
+            <input class="feedback-form user-email" id="user-email" type="text" name="user-email" placeholder="email@example.com" >
             <label class="visually-hidden" for="user-email">Ваша почта</label>
           </div>
           <div>
-            <textarea class="feedback-form feedbak-textarea" id="user-message" name="message" placeholder="В свободной форме"></textarea>
+            <textarea class="feedback-form feedback-textarea" id="user-message" name="message" placeholder="В свободной форме" ></textarea>
             <label class="visually-hidden" for="user-message">Расскажите, что случилось</label>
           </div>
           <input class="btn btn-popup" type="submit" value="Отправить">
         </form>
       </section>
     </div>
+    <script src="js/slider.min.js"></script>
+    <script src="js/feedback-popup.min.js"></script>
   </body>
 </html>

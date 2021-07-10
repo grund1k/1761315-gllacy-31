@@ -410,8 +410,6 @@ img{
 
 /* Enter */
 .enter {
-  right: -21px;
-  top: 15px;
   display: none;
   position: absolute;
   padding: 20px;

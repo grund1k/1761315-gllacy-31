@@ -53,7 +53,7 @@
                     <input id="password" type="password" name="password" placeholder="••••••••">
                     <label class="visually-hidden" for="password">Пароль</label>
                   </div>
-                  <div class="login-sumbit-restore">
+                  <div class="login-submit-restore">
                     <input class="btn btn-login" type="submit" value="Войти">
                     <div>
                       <a class="login-restore" href="#">Забыли пароль?</a>
@@ -65,7 +65,7 @@
             </div>
             <div class="user-navigation-list basket-active">
               <a class="btn-basket" href="#">2 товара</a>
-              <div class="products-in-backet">
+              <div class="products-in-basket">
                 <div class="basket-wrapper">
                   <ul class="basket-item">
                     <li class="basket-item-img">
@@ -120,7 +120,8 @@
         <form class="filter-form" action="https://echo.htmlacademy.ru" method="GET">
           <fieldset class="sort-select">
             <legend>Сортировка:</legend>
-            <select class="sort">
+            <label class="visually-hidden" for="sort-filter">Сортировка</label>
+            <select class="sort" id="sort-filter">
               <option value="popular">по популярности</option>
               <option value="cheap">сначала недорогие</option>
               <option value="expensive">сначала дорогие</option>
